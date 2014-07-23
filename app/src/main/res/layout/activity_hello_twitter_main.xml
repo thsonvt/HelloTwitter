@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".HelloTwitterMainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_twitter"
+        android:id="@+id/tvHelloTwitter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:background="@drawable/abc_ab_bottom_solid_dark_holo"
+        android:textColor="#fffffefc"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:id="@+id/tvUsername"
+        android:layout_below="@+id/tvHelloTwitter"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:id="@+id/tvPassword"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/tvUsername"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsername"
+        android:layout_marginLeft="8dp"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textSize="13sp"
+        android:layout_above="@+id/tvPassword"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:layout_alignRight="@+id/tvHelloTwitter"
+        android:layout_alignEnd="@+id/tvHelloTwitter"
+        android:layout_toRightOf="@+id/tvUsername" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtPassword"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="5dp"
+        android:textSize="13sp"
+        android:layout_gravity="center_vertical"
+        android:layout_alignBottom="@+id/tvPassword"
+        android:layout_alignRight="@+id/txtUsername"
+        android:layout_alignEnd="@+id/txtUsername"
+        android:layout_alignLeft="@+id/txtUsername"
+        android:layout_alignStart="@+id/txtUsername" />
+
+    <Button
+        android:layout_width="290dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/txtPassword"
+        android:layout_alignEnd="@+id/txtPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="false" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/txtPassword"
+        android:layout_alignTop="@+id/txtUsername"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnLogin"></LinearLayout>
+</RelativeLayout>
